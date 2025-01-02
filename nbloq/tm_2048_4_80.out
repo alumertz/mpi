@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mpi_p2p_naobloqueante
+Node: hype1
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+80 total processes failed to start
+
+ Performance counter stats for 'mpirun -np 80 -machinefile nodes.687851 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 80 ./mpi_p2p_naobloqueante 2048':
+
+            203.66 msec task-clock                       #    0.002 CPUs utilized          
+         556922632      cycles                           #    2.735 GHz                    
+         443499416      instructions                     #    0.80  insn per cycle         
+
+     130.791752345 seconds time elapsed
+
+       0.051772000 seconds user
+       0.139386000 seconds sys
+
+

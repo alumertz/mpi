@@ -5,6 +5,6 @@ all: #mpi_coletiva mpi_p2p_bloqueante mpi_p2p_naobloqueante
 	mpicc mpi_p2p_bloqueante.c -o mpi_p2p_bloqueante
 	mpicc mpi_p2p_naobloqueante.c -o mpi_p2p_naobloqueante
 
-clean:  #rm *.out *.err nodes.*  ---igor
+clean:  
 	rm mpi_coletiva mpi_p2p_bloqueante mpi_p2p_naobloqueante
-	
+	rm *.out *.err nodes.* 

@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mpi_coletiva
+Node: hype1
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+160 total processes failed to start
+
+ Performance counter stats for 'mpirun -np 160 -machinefile nodes.687862 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 160 ./mpi_coletiva 4096':
+
+            205.80 msec task-clock                       #    0.002 CPUs utilized          
+         565967938      cycles                           #    2.750 GHz                    
+         453297105      instructions                     #    0.80  insn per cycle         
+
+     131.317854781 seconds time elapsed
+
+       0.067278000 seconds user
+       0.126148000 seconds sys
+
+

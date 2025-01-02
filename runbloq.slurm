@@ -4,8 +4,8 @@
 #SBATCH --nodes=4
 #SBATCH --ntasks=160
 #SBATCH --time=2:00:00
-#SBATCH --output=./coletiva/out/%x_%j.out
-#SBATCH --error=./coletiva/out/%x_%j.err
+#SBATCH --output=./bloq/out/%x_%j.out
+#SBATCH --error=./bloq/out/%x_%j.err
 
 MACHINEFILE="nodes.$SLURM_JOB_ID"
 srun -l hostname | sort -n | awk '{print $2}' > $MACHINEFILE
@@ -16,5 +16,5 @@ mpirun -np $SLURM_NTASKS \
        --mca btl ^openib \
        --mca btl_tcp_if_include eno2 \
        --bind-to none -np $SLURM_NTASKS \
-       ./mpi_coletiva 16384 &>> ./coletiva/tm_16384_4_160.out  
+       ./mpi_p2p_bloqueante 16384 &>> ./bloq/tm_16384_4_160.out  
 sacct -j $SLURM_JOB_ID --format=JobID,JobName,CPUTime,MaxRSS,AveRSS,Elapsed

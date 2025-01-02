@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_domain).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: hype1
+  Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
+  Error: No data available (61)
+--------------------------------------------------------------------------
+Execution time: 0.662887
+[hype1:730181] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype1:730181] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+ Performance counter stats for 'mpirun -np 40 -machinefile nodes.687801 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 1024':
+
+          65501.92 msec task-clock                       #    8.505 CPUs utilized          
+      169162436292      cycles                           #    2.583 GHz                    
+      115186767824      instructions                     #    0.68  insn per cycle         
+
+       7.701326224 seconds time elapsed
+
+      43.036843000 seconds user
+      22.947764000 seconds sys
+
+
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_domain).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: hype1
+  Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
+  Error: No data available (61)
+--------------------------------------------------------------------------
+Execution time: 0.668185
+[hype1:732075] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype1:732075] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+ Performance counter stats for 'mpirun -np 40 -machinefile nodes.687809 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 1024':
+
+          66863.80 msec task-clock                       #    8.979 CPUs utilized          
+      172770688150      cycles                           #    2.584 GHz                    
+      117900179196      instructions                     #    0.68  insn per cycle         
+
+       7.446361070 seconds time elapsed
+
+      43.920638000 seconds user
+      23.394805000 seconds sys
+
+
