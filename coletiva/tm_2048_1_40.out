@@ -6,42 +6,19 @@ unusual; your job may behave unpredictably (and/or abort) after this.
   Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
   Error: No data available (61)
 --------------------------------------------------------------------------
-[hype1:732990] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
-[hype1:732990] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-Execution time: 13.614459
+[hype1:763581] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype1:763581] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Execution time: 12.236363
 
- Performance counter stats for 'mpirun -np 40 -machinefile nodes.687810 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 2048':
+ Performance counter stats for 'mpirun -np 40 -machinefile nodes.687894 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 2048':
 
-         548800.91 msec task-clock                       #   26.689 CPUs utilized          
-     1423032111117      cycles                           #    2.593 GHz                    
-      573351619966      instructions                     #    0.40  insn per cycle         
+         526571.76 msec task-clock                       #   27.495 CPUs utilized          
+     1365694843549      cycles                           #    2.594 GHz                    
+      502907457556      instructions                     #    0.37  insn per cycle         
 
-      20.563067045 seconds time elapsed
+      19.151684975 seconds time elapsed
 
-     523.199816000 seconds user
-      26.701033000 seconds sys
-
-
---------------------------------------------------------------------------
-mpirun was unable to launch the specified application as it could not access
-or execute an executable:
-
-Executable: ./mpi_coletiva
-Node: hype3
-
-while attempting to start process rank 0.
---------------------------------------------------------------------------
-40 total processes failed to start
-
- Performance counter stats for 'mpirun -np 40 -machinefile nodes.687827 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 2048':
-
-            151.75 msec task-clock                       #    0.899 CPUs utilized          
-         419023060      cycles                           #    2.761 GHz                    
-         330209345      instructions                     #    0.79  insn per cycle         
-
-       0.168754582 seconds time elapsed
-
-       0.051830000 seconds user
-       0.107648000 seconds sys
+     503.413336000 seconds user
+      23.657202000 seconds sys
 
 

@@ -1,23 +1,24 @@
 --------------------------------------------------------------------------
-mpirun was unable to launch the specified application as it could not access
-or execute an executable:
+Open MPI failed an OFI Libfabric library call (fi_domain).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
 
-Executable: ./mpi_p2p_bloqueante
-Node: hype1
-
-while attempting to start process rank 0.
+  Local host: hype1
+  Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
+  Error: No data available (61)
 --------------------------------------------------------------------------
-80 total processes failed to start
+[hype1:770769] 79 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype1:770769] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Execution time: 218.057455
 
- Performance counter stats for 'mpirun -np 80 -machinefile nodes.687849 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 80 ./mpi_p2p_bloqueante 8192':
+ Performance counter stats for 'mpirun -np 80 -machinefile nodes.687917 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 80 ./mpi_p2p_bloqueante 8192':
 
-            202.24 msec task-clock                       #    0.002 CPUs utilized          
-         554531591      cycles                           #    2.742 GHz                    
-         442373712      instructions                     #    0.80  insn per cycle         
+        4353691.97 msec task-clock                       #   12.260 CPUs utilized          
+    11296426977950      cycles                           #    2.595 GHz                    
+     7214724711571      instructions                     #    0.64  insn per cycle         
 
-     130.766491140 seconds time elapsed
+     355.120409926 seconds time elapsed
 
-       0.078760000 seconds user
-       0.111191000 seconds sys
+    4335.678391000 seconds user
+      19.079944000 seconds sys
 
 

@@ -2,23 +2,23 @@
 Open MPI failed an OFI Libfabric library call (fi_domain).  This is highly
 unusual; your job may behave unpredictably (and/or abort) after this.
 
-  Local host: hype1
+  Local host: hype5
   Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
   Error: No data available (61)
 --------------------------------------------------------------------------
-[hype1:734838] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
-[hype1:734838] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-Execution time: 831.137695
+[hype5:370130] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype5:370130] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Execution time: 827.465791
 
- Performance counter stats for 'mpirun -np 40 -machinefile nodes.687813 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 8192':
+ Performance counter stats for 'mpirun -np 40 -machinefile nodes.687897 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 8192':
 
-       32987725.73 msec task-clock                       #   39.313 CPUs utilized          
-    85606427883260      cycles                           #    2.595 GHz                    
-    27954190513813      instructions                     #    0.33  insn per cycle         
+       33072839.09 msec task-clock                       #   39.562 CPUs utilized          
+    85730998416005      cycles                           #    2.592 GHz                    
+    26256721457311      instructions                     #    0.31  insn per cycle         
 
-     839.110532945 seconds time elapsed
+     835.978725060 seconds time elapsed
 
-   32944.282609000 seconds user
-      49.756745000 seconds sys
+   33022.567947000 seconds user
+      52.530751000 seconds sys
 
 

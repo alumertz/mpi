@@ -1,46 +1,24 @@
 --------------------------------------------------------------------------
-mpirun was unable to launch the specified application as it could not access
-or execute an executable:
+Open MPI failed an OFI Libfabric library call (fi_domain).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
 
-Executable: ./mpi_p2p_bloqueante
-Node: hype1
-
-while attempting to start process rank 0.
+  Local host: hype3
+  Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
+  Error: No data available (61)
 --------------------------------------------------------------------------
-160 total processes failed to start
+[hype1:767214] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype1:767214] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Execution time: 560.419254
 
- Performance counter stats for 'mpirun -np 160 -machinefile nodes.687847 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 160 ./mpi_p2p_bloqueante 8192':
+ Performance counter stats for 'mpirun -np 40 -machinefile nodes.687916 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_p2p_bloqueante 8192':
 
-            200.91 msec task-clock                       #    0.002 CPUs utilized          
-         551599236      cycles                           #    2.745 GHz                    
-         452783852      instructions                     #    0.82  insn per cycle         
+        5228513.78 msec task-clock                       #    7.513 CPUs utilized          
+    13582839465487      cycles                           #    2.598 GHz                    
+    13202000878732      instructions                     #    0.97  insn per cycle         
 
-     130.722653518 seconds time elapsed
+     695.936484221 seconds time elapsed
 
-       0.069714000 seconds user
-       0.118925000 seconds sys
-
-
---------------------------------------------------------------------------
-mpirun was unable to launch the specified application as it could not access
-or execute an executable:
-
-Executable: ./mpi_p2p_bloqueante
-Node: hype1
-
-while attempting to start process rank 0.
---------------------------------------------------------------------------
-160 total processes failed to start
-
- Performance counter stats for 'mpirun -np 160 -machinefile nodes.687857 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 160 ./mpi_p2p_bloqueante 1024':
-
-            206.10 msec task-clock                       #    0.002 CPUs utilized          
-         563959769      cycles                           #    2.736 GHz                    
-         452230156      instructions                     #    0.80  insn per cycle         
-
-     130.753476867 seconds time elapsed
-
-       0.074602000 seconds user
-       0.120192000 seconds sys
+    5217.807581000 seconds user
+      15.249288000 seconds sys
 
 

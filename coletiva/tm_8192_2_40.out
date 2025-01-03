@@ -6,19 +6,19 @@ unusual; your job may behave unpredictably (and/or abort) after this.
   Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
   Error: No data available (61)
 --------------------------------------------------------------------------
-[hype2:498205] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
-[hype2:498205] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-Execution time: 429.511837
+[hype1:764303] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype1:764303] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Execution time: 428.847776
 
- Performance counter stats for 'mpirun -np 40 -machinefile nodes.687814 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 8192':
+ Performance counter stats for 'mpirun -np 40 -machinefile nodes.687896 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 8192':
 
-        8538012.45 msec task-clock                       #   15.098 CPUs utilized          
-    22131521063074      cycles                           #    2.592 GHz                    
-    13643484655661      instructions                     #    0.62  insn per cycle         
+        8472469.56 msec task-clock                       #   15.012 CPUs utilized          
+    21985656773031      cycles                           #    2.595 GHz                    
+    13543373695699      instructions                     #    0.62  insn per cycle         
 
-     565.521104266 seconds time elapsed
+     564.395251386 seconds time elapsed
 
-    8518.779230000 seconds user
-      20.571009000 seconds sys
+    8456.002328000 seconds user
+      18.610566000 seconds sys
 
 

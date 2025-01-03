@@ -1,46 +1,24 @@
 --------------------------------------------------------------------------
-mpirun was unable to launch the specified application as it could not access
-or execute an executable:
+Open MPI failed an OFI Libfabric library call (fi_domain).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
 
-Executable: ./mpi_coletiva
-Node: hype1
-
-while attempting to start process rank 0.
+  Local host: hype2
+  Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
+  Error: No data available (61)
 --------------------------------------------------------------------------
-40 total processes failed to start
+[hype1:759703] 39 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype1:759703] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Execution time: 8.268251
 
- Performance counter stats for 'mpirun -np 40 -machinefile nodes.687822 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 2048':
+ Performance counter stats for 'mpirun -np 40 -machinefile nodes.687888 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 2048':
 
-            210.38 msec task-clock                       #    0.002 CPUs utilized          
-         574498269      cycles                           #    2.731 GHz                    
-         439805365      instructions                     #    0.77  insn per cycle         
+          78827.81 msec task-clock                       #    0.554 CPUs utilized          
+      204661819147      cycles                           #    2.596 GHz                    
+      169474096472      instructions                     #    0.83  insn per cycle         
 
-     130.427041580 seconds time elapsed
+     142.408801156 seconds time elapsed
 
-       0.067409000 seconds user
-       0.130324000 seconds sys
-
-
---------------------------------------------------------------------------
-mpirun was unable to launch the specified application as it could not access
-or execute an executable:
-
-Executable: ./mpi_coletiva
-Node: hype1
-
-while attempting to start process rank 0.
---------------------------------------------------------------------------
-40 total processes failed to start
-
- Performance counter stats for 'mpirun -np 40 -machinefile nodes.687837 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 40 ./mpi_coletiva 2048':
-
-            203.03 msec task-clock                       #    0.002 CPUs utilized          
-         555090566      cycles                           #    2.734 GHz                    
-         439755025      instructions                     #    0.79  insn per cycle         
-
-     131.339552594 seconds time elapsed
-
-       0.059651000 seconds user
-       0.132085000 seconds sys
+      74.105398000 seconds user
+       4.984804000 seconds sys
 
 
