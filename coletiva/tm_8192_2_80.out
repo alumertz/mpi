@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_domain).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: hype3
+  Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
+  Error: No data available (61)
+--------------------------------------------------------------------------
+[hype2:566895] 79 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype2:566895] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Execution time: 415.595837
+
+ Performance counter stats for 'mpirun -np 80 -machinefile nodes.688342 --mca btl ^openib --mca btl_tcp_if_include eno2 --bind-to none -np 80 ./mpi_coletiva 8192':
+
+       16581050.80 msec task-clock                       #   29.880 CPUs utilized          
+    42979857282494      cycles                           #    2.592 GHz                    
+    14319502476603      instructions                     #    0.33  insn per cycle         
+
+     554.926572896 seconds time elapsed
+
+   16534.411074000 seconds user
+      48.619555000 seconds sys
+
+
